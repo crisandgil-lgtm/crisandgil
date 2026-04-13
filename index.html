@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISANDGIL Cell - Repuestos y Servicio Técnico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D92B2B',
+                        secondary: '#F28C28',
+                        dark: '#1A1A1A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/595976464666?text=Hola!%20Quiero%20consultar%20sobre%20repuestos%20y%20servicios" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-3xl transition-all duration-300 hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-3xl font-black text-dark">
+
+                CRISANDGIL<span class="text-primary">Cell</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-primary transition-colors">Inicio</a>
+                <a href="#productos" class="hover:text-primary transition-colors">Productos</a>
+                <a href="#marcas" class="hover:text-primary transition-colors">Marcas</a>
+                <a href="#servicios" class="hover:text-primary transition-colors">Servicio Técnico</a>
+                <a href="#contacto" class="hover:text-primary transition-colors">Contacto</a>
+            </nav>
+            <button class="md:hidden text-dark text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="bg-gradient-to-r from-dark to-gray-800 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-black mb-6 text-shadow">
+                TODO PARA TU CELULAR <br>
+                <span class="text-secondary">EN UN SOLO LUGAR</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto">
+                Venta de repuestos de calidad, accesorios y servicio técnico profesional.
+            </p>
+            <a href="#productos" class="bg-primary hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 inline-flex items-center gap-2">
+                VER CATÁLOGO <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- MARCAS -->
+    <section id="marcas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-dark">NUESTRAS MARCAS</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                <div class="bg-gray-100 p-6 rounded-xl w-full max-w-xs card-hover">
+                    <div class="text-3xl font-black text-primary text-center">WEZPARTS</div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl w-full max-w-xs card-hover">
+                    <div class="text-3xl font-black text-secondary text-center">SUNLÔNG</div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl w-full max-w-xs card-hover">
+                    <div class="text-3xl font-black text-dark text-center">VEZR</div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl w-full max-w-xs card-hover">
+                    <div class="text-3xl font-black text-gray-600 text-center">Y MÁS...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4 text-dark">NUESTROS PRODUCTOS</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Contamos con una amplia variedad de repuestos y accesorios para todas las marcas y modelos.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 bg-gray-200 flex items-center justify-center text-6xl text-gray-400">
+                        <i class="fas fa-mobile-alt"></i>
+
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Pantallas y LCD</h3>
+                        <p class="text-gray-600 mb-4">Módulos originales y compatibles de alta calidad.</p>
+                        <a href="https://wa.me/595976464666?text=Hola!%20Quiero%20consultar%20por%20Pantallas%20y%20LCD" class="text-primary font-bold hover:text-red-700 inline-flex items-center">
+                            Consultar precio <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 bg-gray-200 flex items-center justify-center text-6xl text-gray-400">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Baterías</h3>
+                        <p class="text-gray-600 mb-4">Baterías de larga duración y garantía.</p>
+                        <a href="https://wa.me/595976464666?
+
+text=Hola!%20Quiero%20consultar%20por%20Baterías" class="text-primary font-bold hover:text-red-700 inline-flex items-center">
+                            Consultar precio <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 bg-gray-200 flex items-center justify-center text-6xl text-gray-400">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Cargadores y Cables</h3>
+                        <p class="text-gray-600 mb-4">Todo tipo de cargadores, cables y fuentes de poder.</p>
+                        <a href="https://wa.me/595976464666?text=Hola!%20Quiero%20consultar%20por%20Cargadores" class="text-primary font-bold hover:text-red-700 inline-flex items-center">
+                            Consultar precio <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                 <!-- Producto 4 -->
+                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 bg-gray-200 flex items-center justify-center text-6xl text-gray-400">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Accesorios Varios</h3>
+                        <p class="text-gray-600 mb-4">Fundas, audífonos, protectores y más.</p>
+                        <a href="https://wa.me/595976464666?text=Hola!%20Quiero%20consultar%20por%20Accesorios" class="text-primary font-bold hover:text-red-700 inline-flex items-center">
+                            Consultar precio <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 bg-gray-200 flex items-center justify-center text-6xl text-gray-400">
+
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Herramientas e Insumos</h3>
+                        <p class="text-gray-600 mb-4">Todo lo necesario para reparación técnica.</p>
+                        <a href="https://wa.me/595976464666?text=Hola!%20Quiero%20consultar%20por%20Herramientas" class="text-primary font-bold hover:text-red-700 inline-flex items-center">
+                            Consultar precio <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-16 bg-dark text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">SERVICIO TÉCNICO</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl text-secondary mb-4"><i 
+
+class="fas fa-display"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Cambio de Pantalla</h3>
+                    <p class="text-gray-400">Rápido y con garantía escrita.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl text-secondary mb-4"><i class="fas fa-battery-full"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Cambio de Batería</h3>
+                    <p class="text-gray-400">Recupera la vida útil de tu equipo.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl text-secondary mb-4"><i class="fas fa-microchip"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Reparación Hardware</h3>
+                    <p class="text-gray-400">Solucionamos problemas de placa.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl text-secondary mb-4"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Software y Flasheo</h3>
+
+                    <p class="text-gray-400">Actualizaciones y liberaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-dark">CONTACTO Y UBICACIÓN</h2>
+            <div class="max-w-2xl mx-auto bg-gray-50 p-8 md:p-10 rounded-2xl shadow-inner">
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-primary mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg text-dark">Dirección</h4>
+                            <p class="text-gray-600">Del Maestro esquina Dr. Pino - Barrio Loma - CAACUPE</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-primary mt-1"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg text-
+
+dark">Teléfono / WhatsApp</h4>
+                            <p class="text-gray-600">+595 976 464 666</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-primary mt-1"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg text-dark">Horario de Atención</h4>
+                            <p class="text-gray-600">Lunes a Sábado de 8:00 a 18:00 hs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/595976464666" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 inline-flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> ¡ESCRÍBENOS AHORA!
+                    </a>
+                </div>
+            </div>
